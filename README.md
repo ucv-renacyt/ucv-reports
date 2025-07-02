@@ -1,6 +1,6 @@
 # UCV Reports
 
-Este proyecto es un sistema de reportes desarrollado para la Universidad Central de Venezuela (UCV), compuesto por dos módulos principales: un frontend y un backend. El objetivo es facilitar la gestión, visualización y generación de reportes institucionales.
+Este proyecto es un sistema de reportes desarrollado para la Universidad César Vallejo (UCV), compuesto por dos módulos principales: un frontend y un backend. El objetivo es facilitar la gestión, visualización y generación de reportes institucionales.
 
 ## Estructura del Proyecto
 
