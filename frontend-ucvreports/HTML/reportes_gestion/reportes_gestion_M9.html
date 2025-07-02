@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestion Reportes</title>
+    <link rel="stylesheet" href="/CSS/reportes_gestion/reportes_gestion.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../CSS/auth/images/logo_ucv_modal.png"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../../CSS/auth/images/logo_ucv.png" alt="logoUcv" />
+      </div>
+      <ul>
+        <li>
+          <a href="/usuarios_gestion"
+            ><i class="fas fa-users"></i> Gestion de Usuarios</a
+          >
+        </li>
+        <li class="active">
+          <a href="/reportes_gestion"
+            ><i class="fas fa-chart-bar"></i> Gestion de Reportes</a
+          >
+        </li>
+        <li>
+          <a href="/existencia_entrada"
+            ><i class="fas fa-file-import"></i> Existencia de Entrada</a
+          >
+        </li>
+        <li>
+          <a href="/existencia_salida"
+            ><i class="fas fa-file-export"></i> Existencia de Salida</a
+          >
+        </li>
+        <li>
+          <a href="/"><i class="fas fa-sign-out-alt"></i> Exit</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <h1>Gestión de Reportes</h1>
+      </div>
+      <div class="reportes-bar">
+        <div class="reportes-controls">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar por usuario"
+          />
+          <button class="reportes-btn" id="abrirModalReportesBtn">
+            <i class="fas fa-exclamation-triangle"></i>
+            Reportes
+          </button>
+        </div>
+      </div>
+      <!-- Tabla de Gestión de Reportes -->
+      <div class="reportes-table-container">
+        <div class="reportes-box">
+          <table class="reportes-table">
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Lugar del Problema</th>
+                <th>Fecha</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Elimina las filas estáticas, quedando solo el tbody vacío para llenarse dinámicamente -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Desaprobación de Reporte -->
+    <div id="modalDesaprobar" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModalDesaprobar()">&times;</span>
+        <label
+          >¿Estás seguro de que deseas desaprobar este reporte? Ingrese el
+          motivo:</label
+        >
+        <input type="text" id="motivoDesaprobacion" placeholder="Motivo..." />
+        <div class="modal-actions">
+          <button class="btn aceptar" onclick="aceptarDesaprobacion()">
+            Aceptar
+          </button>
+          <button class="btn cancelar" onclick="cerrarModalDesaprobar()">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Reportes Desaprobados -->
+    <div id="modalReportes" class="modal">
+      <div class="modal-content modal-reportes">
+        <span class="close" onclick="cerrarModalReportes()">&times;</span>
+
+        <div class="icono-container-modal">
+          <img
+            src="../../CSS/auth/images/logo_ucv_modal.png"
+            class="icono-btn-modal"
+            alt="report_LOGO-ucv"
+          />
+        </div>
+
+        <h2 class="text-modal">Detalles de reportes</h2>
+        <div class="modal-table-container">
+          <table class="modal-table">
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Lugar del Problema</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tbodyReportesDetalle">
+              <!-- Las filas se llenarán dinámicamente -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Detalle de Reporte -->
+    <div id="modalDetalleReporte" class="modal">
+      <div class="modal-content modal-detalle-reporte">
+        <span class="close" onclick="cerrarModalDetalleReporte()">&times;</span>
+        <h3>Detalles del Reporte</h3>
+        <div class="detalle-info">
+          <!-- Este contenido se llenará dinámicamente con JS -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="../../JAVASCRIPT/reportes_gestion_M9.js"
+    ></script>
+  </body>
+</html>

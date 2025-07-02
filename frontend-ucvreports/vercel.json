@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/HTML/auth/login.html"
+    },
+    {
+      "src": "/login",
+      "dest": "/HTML/auth/login.html"
+    },
+    {
+      "src": "/auth/recuperacion",
+      "dest": "/HTML/auth/recuperacion.html"
+    },
+    {
+      "src": "/auth/recuperacion_cuenta",
+      "dest": "/HTML/auth/recuperacion_cuenta.html"
+    },
+    {
+      "src": "/auth/register",
+      "dest": "/HTML/auth/register.html"
+    },
+    {
+      "src": "/reporte_enviar",
+      "dest": "/HTML/reporte_enviar/reporte_enviar.html"
+    },
+    {
+      "src": "/existencia_entrada",
+      "dest": "/HTML/reportes_gestion/existencia_entrada.html"
+    },
+    {
+      "src": "/existencia_salida",
+      "dest": "/HTML/reportes_gestion/existencia_salida.html"
+    },
+    {
+      "src": "/productos_danados",
+      "dest": "/HTML/reportes_gestion/productos_danados.html"
+    },
+    {
+      "src": "/reportes_gestion",
+      "dest": "/HTML/reportes_gestion/reportes_gestion_M9.html"
+    },
+    {
+      "src": "/usuarios_gestion",
+      "dest": "/HTML/reportes_gestion/usuarios_gestion_M6.html"
+    },
+    {
+      "src": "/articulos_uso_actual",
+      "dest": "/HTML/reportes_gestion/articulos_uso_actual.html"
+    },
+    {
+      "src": "/reportes_globales",
+      "dest": "/HTML/reportes_globales/reportes_globales.html"
+    }
+  ]
+}

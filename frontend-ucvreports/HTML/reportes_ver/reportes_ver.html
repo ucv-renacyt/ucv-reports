@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Visualiza tus Reportes</title>
+    <link rel="stylesheet" href="../../CSS/reportes_ver/reportes_ver.css" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../CSS/auth/images/logo_ucv_page.svg"
+    />
+
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <nav class="sidebar" id="sidebar">
+        <div class="logo-section">
+          <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="logo-text">Sistema<br>Reportes</div>
+        </div>
+
+        <div class="nav-menu">
+          <a href="#" class="nav-item">
+            <i class="fas fa-paper-plane"></i>
+            <span>Enviar Reporte</span>
+          </a>
+          <a href="#" class="nav-item active">
+            <i class="fas fa-list-alt"></i>
+            <span>Artículos Reportados</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Salir</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Overlay for mobile -->
+      <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+        onclick="toggleSidebar()"
+      ></div>
+
+      <!-- Main Content -->
+      <main class="main-content" id="mainContent">
+        <header class="header">
+          <h1>
+            <i class="fas fa-eye"></i>
+            <span>Visualiza tus Reportes</span>
+          </h1>
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleSidebar()">
+              <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+
+        <div class="content-area">
+          <!-- Help Banner -->
+          <div class="help-banner">
+            <i class="fas fa-info-circle"></i>
+            <div class="help-content">
+              <div class="help-text">
+                <strong>Ayuda:</strong> Aquí puedes observar y revisar tus
+                reportes enviados. Si no logras visualizarlo actualiza la
+                página.
+              </div>
+              <button class="help-btn" onclick="irHistorial()">
+                <i class="fas fa-history"></i>
+                Historial
+              </button>
+            </div>
+          </div>
+
+          <!-- Reports Table Container -->
+          <div class="table-container">
+            <div class="table-header">
+              <i class="fas fa-table"></i>
+              <h2>Lista de Reportes</h2>
+            </div>
+
+            <!-- Desktop Table -->
+            <div class="desktop-table">
+              <table class="reports-table">
+                <thead>
+                  <tr>
+                    <th><i class="fas fa-calendar"></i>Fecha</th>
+                    <th>
+                      <i class="fas fa-map-marker-alt"></i>Lugar del Reporte
+                    </th>
+                    <th><i class="fas fa-file-alt"></i>Descripción</th>
+                    <th><i class="fas fa-exclamation-circle"></i>Motivo</th>
+                    <th><i class="fas fa-cogs"></i>Acción</th>
+                  </tr>
+                </thead>
+                <tbody id="reportes-table-body"></tbody>
+              </table>
+            </div>
+
+            <!-- Mobile Cards -->
+            <div class="mobile-cards" id="reportes-mobile-cards"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../../JAVASCRIPT/reportes_globlaes.js"></script>
+  </body>
+</html>

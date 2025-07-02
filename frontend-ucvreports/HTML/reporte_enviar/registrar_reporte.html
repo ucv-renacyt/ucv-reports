@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Reporte</title>
+    <link
+      rel="stylesheet"
+      href="../../CSS/reporte_enviar/registrar_reporte.css"
+    />
+    <script src="../../JAVASCRIPT/reporte_enviar/registrar_reporte.js"></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1>Envía tu Reporte</h1>
+    </header>
+
+    <main class="contenedor">
+      <h2>Registrar Reporte</h2>
+
+      <form>
+        <label for="id_facultad">Facultad:</label>
+        <select id="id_facultad" name="id_facultad">
+          <option value="">Seleccione una facultad</option>
+        </select>
+
+        <label for="id_turno">Turno:</label>
+        <select id="id_turno" name="id_turno">
+          <option value="">Seleccione un turno</option>
+        </select>
+
+        <label for="id_pabellon">Pabellón:</label>
+        <select id="id_pabellon" name="id_pabellon">
+          <option value="">Seleccione un pabellón</option>
+        </select>
+
+        <label for="id_piso">Piso:</label>
+        <select id="id_piso" name="id_piso">
+          <option value="">Seleccione un piso</option>
+        </select>
+
+        <label for="id_aula">Aula:</label>
+        <select id="id_aula" name="id_aula">
+          <option value="">Seleccione un aula</option>
+        </select>
+
+        <label for="id_articulo">Artículo:</label>
+        <select id="id_articulo" name="id_articulo">
+          <option value="">Seleccione un artículo</option>
+        </select>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+
+        <label for="archivo">Adjunta tu evidencia:</label>
+        <input type="file" id="archivo" name="archivo" />
+
+        <button type="submit">Enviar Reporte</button>
+      </form>
+    </main>
+  </body>
+</html>

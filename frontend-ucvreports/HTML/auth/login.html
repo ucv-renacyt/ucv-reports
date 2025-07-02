@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Cesar Vallejo Logistics</title>
+    <link rel="stylesheet" href="../../CSS/auth/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-anim-wrapper">
+      <div class="login-container">
+        <div class="login-panel-left">
+          <div class="logo-circle"></div>
+          <p class="thank-you">Gracias por visitarnos</p>
+          <h2 class="welcome">BIENVENIDO<br />DE NUEVO</h2>
+          <div class="avatar"></div>
+        </div>
+        <div class="login-panel-right">
+          <p class="subtitle">Iniciar Sesión</p>
+          <h1 class="title">Cesar Vallejo<br />Logistics</h1>
+          <form class="login-form" id="login-form">
+            <div class="input-icon">
+              <i class="fa fa-user"></i>
+              <input
+                type="text"
+                placeholder="Ingresa tu usuario"
+                id="username-input"
+              />
+            </div>
+            <div class="input-icon">
+              <i class="fa fa-lock"></i>
+              <input
+                type="password"
+                placeholder="••••••••"
+                id="password-input"
+              />
+              <button type="button" class="toggle-password" id="togglePassword">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+
+            <button type="submit" class="btn-login">Iniciar sesión</button>
+          </form>
+          <div class="help-links">
+            <a href="/auth/recuperacion_cuenta">¿Olvidaste tu contraseña?</a>
+            <span class="help-divider">O</span>
+            <a href="/auth/register">Regístrate aquí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../JAVASCRIPT/auth/login.js"></script>
+  </body>
+</html>

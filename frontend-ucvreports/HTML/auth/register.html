@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="../../CSS/auth/register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container" id="main-content">
+      <div id="loading-screen"></div>
+
+      <div class="form-box">
+        <div class="title-container">
+          <div class="line left"></div>
+          <h1>Crear Cuenta</h1>
+          <div class="line right"></div>
+        </div>
+        <p>
+          ¡Bienvenido! Por favor, completa los siguientes campos para crear tu
+          cuenta:
+        </p>
+        <form id="registerForm">
+          <div class="input-icon">
+            <i class="fa fa-user-circle" style="color: #007bff"></i>
+            <input
+              type="text"
+              placeholder="Nombres Completos"
+              id="nombre"
+              required
+            />
+          </div>
+          <div class="input-icon">
+            <i class="fa fa-user-tag" style="color: #e30513"></i>
+            <input
+              type="text"
+              placeholder="Apellido Paterno"
+              id="apellidoPaterno"
+              required
+            />
+          </div>
+          <div class="input-icon">
+            <i class="fa fa-user-friends" style="color: #ffb347"></i>
+            <input
+              type="text"
+              placeholder="Apellido Materno"
+              id="apellidoMaterno"
+              required
+            />
+          </div>
+          <div class="input-icon">
+            <i class="fa fa-lock"></i>
+            <input
+              type="password"
+              placeholder="Contraseña"
+              id="password"
+              required
+            />
+            <button type="button" class="toggle-password" id="togglePassword">
+              <i class="fa fa-eye"></i>
+            </button>
+          </div>
+          <div class="input-icon">
+            <i class="fa fa-check-circle" style="color: #28a745"></i>
+            <input
+              type="password"
+              placeholder="Verificar Contraseña"
+              id="verificarPassword"
+              required
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              id="toggleVerificarPassword"
+            >
+              <i class="fa fa-eye"></i>
+            </button>
+          </div>
+          <div class="button-group">
+            <button
+              class="registro-btn"
+              type="button"
+              onclick="window.location.href='/login'"
+            >
+              regresar
+            </button>
+            <button class="registro-btn" type="submit">CREAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../../JAVASCRIPT/auth/register.js"></script>
+  </body>
+</html>

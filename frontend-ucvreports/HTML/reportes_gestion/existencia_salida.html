@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Existencia Salida</title>
+    <link
+      rel="stylesheet"
+      href="../../CSS/reportes_gestion/existencia_salida.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../CSS/auth/images/logo_ucv_modal.png"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../../CSS/auth/images/logo_ucv.png" alt="logoUcv" />
+      </div>
+      <ul>
+        <li>
+          <a href="/usuarios_gestion"
+            ><i class="fas fa-users"></i> Gestion de Usuarios</a
+          >
+        </li>
+        <li>
+          <a href="/reportes_gestion"
+            ><i class="fas fa-chart-bar"></i> Gestion de Reportes</a
+          >
+        </li>
+        <li>
+          <a href="/existencia_entrada"
+            ><i class="fas fa-file-import"></i> Existencia de Entrada</a
+          >
+        </li>
+        <li class="active">
+          <a href="/existencia_salida"
+            ><i class="fas fa-file-export"></i> Existencia de Salida</a
+          >
+        </li>
+        <li>
+          <a href="/"><i class="fas fa-sign-out-alt"></i> Exit</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="header">
+        <div class="header-logo"></div>
+        <h1>Gestión de Existencia de Salida</h1>
+      </div>
+      <!-- Eliminado: Sección de Productos Nuevos -->
+      <div class="productos-grid-container">
+        <!-- Aquí irán las tarjetas de productos -->
+      </div>
+    </div>
+
+    <div id="modalStockActual" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Stock Actual de Artículos Almacenados</h2>
+        <table class="stock-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Estado</th>
+              <th>Precio</th>
+              <th>Tipo de Artículo</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EJ001</td>
+              <td>Nombre de Ejemplo</td>
+              <td>Disponible</td>
+              <td>100.00</td>
+              <td>Tipo de Ejemplo</td>
+              <td><button class="btn usar-articulo">Usar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="modalSeleccionarUbicacion" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Lugar donde desea usar este artículo</h2>
+        <div class="ubicacion-form">
+          <div class="form-group">
+            <label for="pabellon">Pabellón:</label>
+            <select id="pabellon">
+              <option value="">Selecciona un pabellón</option>
+              <option value="A">Pabellón A</option>
+              <option value="B">Pabellón B</option>
+              <option value="C">Pabellón C</option>
+              <option value="D">Pabellón D</option>
+              <option value="E">Pabellón E</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="piso">Piso:</label>
+            <select id="piso">
+              <option value="">Selecciona un piso</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="salon">Salón:</label>
+            <select id="salon">
+              <option value="">Selecciona un salón</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-buttons">
+          <button class="btn" onclick="cerrarModalUbicacion()">Cerrar</button>
+          <button class="btn confirmar-ubicacion">
+            Confirmar Ubicación
+            <i class="fas fa-check"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../../JAVASCRIPT/existencia_salida.js"></script>
+  </body>
+</html>

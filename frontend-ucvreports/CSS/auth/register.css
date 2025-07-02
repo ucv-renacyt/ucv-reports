@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: url("images/regosterfondo.svg") center center / cover no-repeat
+    fixed;
+  background-color: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+#loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  z-index: 10;
+  transition: transform 1.5s ease-in-out;
+  border-radius: 20px;
+}
+
+#loading-screen.slide-away {
+  transform: translateX(100%);
+}
+
+.form-box {
+  padding: 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.form-box h1 {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.form-box p {
+  margin-bottom: 25px;
+  color: #555;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.08em;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+select {
+  width: 220px;
+  padding: 8px 12px;
+  margin: 0 auto 18px auto;
+  border-radius: 8px;
+  border: 2px solid #e1e1e1;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.registro-btn {
+  flex: 1;
+  padding: 10px 0;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  min-width: 120px;
+  text-align: center;
+}
+
+.registro-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  background: linear-gradient(135deg, #0056b3 0%, #004094 100%);
+}
+
+.registro-btn:active {
+  background: linear-gradient(135deg, #00c3ff 0%, #00f7ff 100%) !important;
+  transform: scale(0.95);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: none;
+}
+
+.registro-btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-15deg);
+  animation: shine 0.5s;
+}
+
+.registro {
+  display: inline-block;
+  text-align: center;
+  margin-top: 25px;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+}
+
+.registro:hover {
+  color: #0056b3;
+  transform: translateY(-1px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff001e);
+  width: 50px;
+  position: relative;
+  animation: expandContract 2s ease-in-out infinite;
+}
+
+.line.left {
+  background: linear-gradient(90deg, #007bff, transparent);
+}
+
+.line.right {
+  background: linear-gradient(90deg, transparent, #ff0000);
+}
+
+@keyframes expandContract {
+  0%,
+  100% {
+    width: 50px;
+  }
+  50% {
+    width: 100px;
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 120px;
+}
+
+.password-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-group input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.input-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-shadow: 0 1px 4px rgba(0, 123, 255, 0.04);
+  font-size: 16px;
+  height: 48px;
+  padding: 0 0 0 0;
+  transition: border-color 0.2s;
+}
+
+.input-icon i {
+  margin-left: 16px;
+  margin-right: 10px;
+  font-size: 1.4em;
+  background: linear-gradient(135deg, #f8fafc 60%, #e1e1e1 100%);
+  border-radius: 50%;
+  padding: 7px;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.07);
+  transition: background 0.3s, color 0.3s;
+}
+
+.input-icon i.fa-check-circle {
+  color: #28a745; /* Verde */
+  background: linear-gradient(135deg, #d4edda 60%, #c3e6cb 100%);
+}
+
+.input-icon input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1em;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px 0 0;
+}
+
+.input-icon:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px #007bff33;
+}
+
+.input-icon input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.toggle-password i {
+  font-size: 1.5em;
+  color: #111111;
+  transition: color 0.2s;
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .form-box {
+    padding: 30px;
+  }
+
+  .form-box h1 {
+    font-size: 2em;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

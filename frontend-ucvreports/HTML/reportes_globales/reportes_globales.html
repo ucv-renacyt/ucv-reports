@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reportes Globales</title>
+    <link
+      rel="stylesheet"
+      href="../../CSS/reportes_globales/reportes_globales.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar" id="sidebar">
+        <div class="logo-section">
+          <div class="logo">
+            <img
+              src="../../CSS/auth/images/logo_ucv_modal.png"
+              alt="Logo UCV"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <span class="logo-text">Sistema Reportes</span>
+        </div>
+        <nav class="nav-menu">
+          <a href="/reporte_enviar" class="nav-item">
+            <i class="fas fa-paper-plane"></i>
+            <span>Enviar Reporte</span>
+          </a>
+          <a href="/reportes_globales" class="nav-item active">
+            <i class="fas fa-list-alt"></i>
+            <span>Artículos Reportados</span>
+          </a>
+          <a href="/" class="nav-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Salir</span>
+          </a>
+        </nav>
+      </aside>
+      <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+        onclick="toggleSidebar()"
+      ></div>
+
+      <div class="main-content" id="mainContent">
+        <header class="header">
+          <div class="header-title">
+            <i class="fas fa-chart-line"></i>
+            <span>Reportes Globales</span>
+          </div>
+          <button class="hamburger" id="hamburgerBtn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </header>
+
+        <!-- CONTENIDO ELIMINADO -->
+
+        <div class="reports-grid" id="reportsGrid">
+          <!-- Las tarjetas se llenarán dinámicamente -->
+        </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <h2 class="modal-title">
+            <i class="fas fa-file-alt"></i>
+            Detalles del Reporte
+          </h2>
+          <button class="close-btn" onclick="closeModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="modal-info">
+            <div class="info-item">
+              <span class="info-label">
+                <i class="fas fa-university"></i>
+                Facultad:
+              </span>
+              <span class="info-value" id="modalFacultad"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">
+                <i class="fas fa-clock"></i>
+                Turno:
+              </span>
+              <span class="info-value" id="modalTurno"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">
+                <i class="fas fa-calendar-check"></i>
+                Fecha:
+              </span>
+              <span class="info-value" id="modalFecha"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">
+                <i class="fas fa-check-circle"></i>
+                Estado:
+              </span>
+              <span class="info-value" id="modalEstado"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">
+                <i class="fas fa-exclamation-triangle"></i>
+                Lugar del Problema:
+              </span>
+              <span class="info-value" id="modalLugar"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">
+                <i class="fas fa-file-alt"></i>
+                Descripción del Problema:
+              </span>
+              <span class="info-value" id="modalDescripcion"></span>
+            </div>
+          </div>
+          <div class="evidence-section">
+            <h3 class="evidence-title">
+              <i class="fas fa-camera"></i>
+              Evidencia:
+            </h3>
+            <img
+              src=""
+              alt="Evidencia del problema"
+              class="evidence-image"
+              id="modalEvidencia"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="../../JAVASCRIPT/usuario_reportes_globales.js"
+    ></script>
+  </body>
+</html>

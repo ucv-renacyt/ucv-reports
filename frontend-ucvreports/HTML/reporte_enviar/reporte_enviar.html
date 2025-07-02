@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Reporte</title>
+    <link rel="stylesheet" href="../../CSS/reporte_enviar/reporte_enviar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../CSS/auth/images/logo_ucv_modal.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar" id="sidebar">
+        <div class="logo-section">
+          <div class="logo">
+            <img
+              src="../../CSS/auth/images/logo_ucv_modal.png"
+              alt="Logo UCV"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div class="logo-text">Sistema Reportes</div>
+        </div>
+        <div class="nav-menu">
+          <a href="#" class="nav-item active">
+            <i class="fas fa-paper-plane"></i>
+            <span>Enviar Reporte</span>
+          </a>
+          <a href="/reportes_globales" class="nav-item">
+            <i class="fas fa-list-alt"></i>
+            <span>Artículos Reportados</span>
+          </a>
+          <a href="#" class="nav-item" id="logoutLink">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Salir</span>
+          </a>
+        </div>
+      </nav>
+      <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+        onclick="toggleSidebar()"
+      ></div>
+      <main class="main" id="mainContent">
+        <header class="header">
+          <h1>
+            <i class="fa-solid fa-layer-group"></i>
+            Registrar Reporte
+          </h1>
+          <button class="hamburger" id="hamburgerBtn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </header>
+
+        <section class="form-section">
+          <div class="form-box">
+            <form id="reportForm">
+              <!-- CAMPOS DE FORMULARIO -->
+              <label
+                >Facultad:<input type="text" id="facultad" required
+              /></label>
+              <label
+                >Turno:
+                <select id="turno" required>
+                  <option value="Mañana">Mañana</option>
+                  <option value="Tarde">Tarde</option>
+                  <option value="Noche">Noche</option>
+                </select>
+              </label>
+              <label>Pabellón:<select id="pabellon" required></select> </label>
+              <label>Piso:<select id="piso" required></select></label>
+              <label>Aula:<select id="aula" required></select></label>
+              <label
+                >Artículo:<input type="text" id="articulo" required
+              /></label>
+              <label>Motivo:<input type="text" id="motivo" required /></label>
+              <label
+                >Descripción:<input type="text" id="descripcion" required
+              /></label>
+              <label
+                >Evidencia:<input
+                  type="file"
+                  id="evidencia"
+                  accept="image/*,application/pdf"
+                />
+              </label>
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Enviar Reporte
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="../../JAVASCRIPT/reporte_enviar.js"></script>
+  </body>
+</html>
