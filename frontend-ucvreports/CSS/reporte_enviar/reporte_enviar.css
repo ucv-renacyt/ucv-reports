@@ -540,15 +540,6 @@ input[type="text"]:focus {
     padding: 20px;
   }
 
-  /* form-fields ya no existe */
-  /*
-    .form-fields {
-        width: 100%; 
-        min-width: 0; 
-        gap: 10px; 
-    }
-    */
-
   label {
     font-size: 14px;
   }

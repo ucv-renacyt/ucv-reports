@@ -26,7 +26,7 @@ body {
 .logo img {
   width: auto;
   height: 70px;
-  background: url("logo.png") no-repeat center center;
+  background: none;
   background-size: 60px 60px;
 }
 
@@ -97,8 +97,7 @@ body {
 .header .logo {
   width: 40px;
   height: 40px;
-  background: url("logo.png") no-repeat center center;
-  background-size: contain;
+  background: none;
 }
 
 .productos-nuevos-section {
@@ -296,7 +295,6 @@ body {
   background: #0b7dda;
 }
 
-/* Estilos para el Modal de Stock Actual */
 #modalStockActual .modal-content {
   max-width: 800px; /* Ancho máximo para la tabla */
 }
@@ -309,8 +307,8 @@ body {
 }
 
 #modalStockActual .table-container {
-  max-height: 400px; /* Altura máxima para el contenedor de la tabla con scroll */
-  overflow-y: auto; /* Añadir scroll vertical si el contenido excede la altura */
+  max-height: 400px;
+  overflow-y: auto;
   margin-top: 15px;
 }
 
@@ -377,17 +375,6 @@ body {
 #modalStockActual .btn.usar-articulo:active {
   background-color: #1e7e34; /* Tono aún más oscuro al hacer clic */
 }
-
-/* Puedes añadir un estilo diferente para el estado "Dejar de Usar" si quieres */
-/*
-#modalStockActual .btn.usar-articulo:contains('Dejar de Usar') {
-    background-color: #dc3545; 
-}
-
-#modalStockActual .btn.usar-articulo:contains('Dejar de Usar'):hover {
-    background-color: #c82333;
-}
-*/
 
 @media (max-width: 768px) {
   .main-content {

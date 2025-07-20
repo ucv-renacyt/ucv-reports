@@ -27,23 +27,18 @@ function renderReportes(reportes) {
       }" alt="Evidencia" class="card-image">
       <div class="card-content">
           <div class="card-date">
-              <i class="fas fa-calendar-alt"></i>
               Fecha: ${reporte.fecha}
           </div>
           <div class="card-shift">
-              <i class="fas fa-sun"></i>
               Turno: ${reporte.turno}
           </div>
           <div class="card-location">
-              <i class="fas fa-map-marker-alt"></i>
               Lugar del Reporte: ${reporte.Pabellon}, ${reporte.Piso}
           </div>
           <div class="card-classroom">
-              <i class="fas fa-door-open"></i>
               Ubicación: ${reporte.Salon}
           </div>
           <button class="visualizar-btn" onclick="openModal('${reporteId}')">
-              <i class="fas fa-eye"></i>
               Visualizar
           </button>
       </div>

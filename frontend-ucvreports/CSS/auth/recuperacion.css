@@ -11,11 +11,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   font-family: Arial, sans-serif;
-  /* Asegura que el fondo cubra todo y sea responsive */
-  background: url("../auth/images/fondo.svg") center center / cover no-repeat
-    fixed;
-  /* Elimina cualquier fondo blanco por defecto */
-  background-color: #000; /* O el color que prefieras de fallback */
+  background-color: #1d3e78; /* O el color que prefieras de fallback */
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }

@@ -6,9 +6,7 @@
 }
 
 body {
-  background: url("images/regosterfondo.svg") center center / cover no-repeat
-    fixed;
-  background-color: #000;
+  background-color: #1d3e78;
   min-height: 100vh;
   overflow-x: hidden;
   display: flex;

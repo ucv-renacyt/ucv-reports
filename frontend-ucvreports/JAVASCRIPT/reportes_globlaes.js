@@ -42,13 +42,11 @@ function renderReports(reports) {
                   <button class="action-btn btn-visualizar" onclick="visualizarReporte('${
                     report.id_reporte
                   }')">
-                      <i class="fas fa-eye"></i>
                       Visualizar
                   </button>
                   <button class="action-btn btn-editar" onclick="editarReporte('${
                     report.id_reporte
                   }')">
-                      <i class="fas fa-edit"></i>
                       Editar
                   </button>
               </td>
@@ -66,7 +64,6 @@ function renderReports(reports) {
               <div class="card-info">
                   <div class="info-row">
                       <div class="info-label">
-                          <i class="fas fa-map-marker-alt"></i>
                           Lugar:
                       </div>
                       <div class="info-value">${[
@@ -79,7 +76,6 @@ function renderReports(reports) {
                   </div>
                   <div class="info-row">
                       <div class="info-label">
-                          <i class="fas fa-file-alt"></i>
                           Descripción:
                       </div>
                       <div class="info-value">${report.descripcion}</div>
@@ -89,13 +85,11 @@ function renderReports(reports) {
                   <button class="action-btn btn-visualizar" onclick="visualizarReporte('${
                     report.id_reporte
                   }')">
-                      <i class="fas fa-eye"></i>
                       Visualizar
                   </button>
                   <button class="action-btn btn-editar" onclick="editarReporte('${
                     report.id_reporte
                   }')">
-                      <i class="fas fa-edit"></i>
                       Editar
                   </button>
               </div>
@@ -124,11 +118,11 @@ function irHistorial() {
   const originalContent = btn.innerHTML;
 
   // Simular navegación al historial
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cargando...';
+  btn.innerHTML = " Cargando...";
   btn.disabled = true;
 
   setTimeout(() => {
-    btn.innerHTML = '<i class="fas fa-check"></i> Redirigiendo...';
+    btn.innerHTML = "Redirigiendo...";
 
     setTimeout(() => {
       btn.innerHTML = originalContent;

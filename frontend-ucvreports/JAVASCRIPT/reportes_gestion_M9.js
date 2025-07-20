@@ -111,11 +111,9 @@ function renderReportesPendientes() {
       <td>${fecha}</td>
       <td>
         <button class="btn aprobar" onclick="aprobarReporte(${historialId})">
-          <i class="fas fa-check-circle"></i>
           Aprobar Reporte
         </button>
         <button class="btn desaprobado" onclick="abrirModalDesaprobar(${historialId})">
-          <i class="fas fa-ban"></i>
           Desaprobar Reporte
         </button>
       </td>

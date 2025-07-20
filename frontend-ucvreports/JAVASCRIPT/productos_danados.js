@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>Lugar del Problema: ${reporte.lugar_problema}</p>
             </div>
             <button class="btn informe" data-reporte-index="${index}">
-            <i class="fas fa-file-alt fa-sm"></i>
             Informe
             </button>
         `;

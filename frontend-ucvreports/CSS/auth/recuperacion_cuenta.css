@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url("images/recuperar.svg") center center / cover no-repeat fixed;
+  background-color: #1d3e78;
   min-height: 100vh;
   display: flex;
   justify-content: center;

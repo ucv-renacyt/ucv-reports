@@ -84,15 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (is_disabled_user) {
         actionsCell.innerHTML = `
-                  <button class="btn-action btn-enable" data-id="${user.IDUsuario}"><i class="fas fa-user-plus"></i>Habilitar</button>
+                  <button class="btn-action btn-enable" data-id="${user.IDUsuario}">Habilitar</button>
               `;
         actionsCell
           .querySelector(".btn-enable")
           .addEventListener("click", () => enableUser(user.IDUsuario));
       } else {
         actionsCell.innerHTML = `
-                  <button class="btn-action btn-edit" data-id="${user.IDUsuario}"><i class="fas fa-edit"></i>Editar</button>
-                  <button class="btn-action btn-disable" data-id="${user.IDUsuario}"><i class="fas fa-user-slash"></i>Deshabilitar</button>
+                  <button class="btn-action btn-edit" data-id="${user.IDUsuario}">Editar</button>
+                  <button class="btn-action btn-disable" data-id="${user.IDUsuario}">Deshabilitar</button>
               `;
         actionsCell
           .querySelector(".btn-disable")

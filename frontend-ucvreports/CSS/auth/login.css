@@ -18,8 +18,7 @@ body {
   justify-content: center;
   width: 100vw;
   font-family: var(--font-segoe-ui);
-  background: url("./images/fondo.svg") center center / cover no-repeat fixed;
-  background-color: #000;
+  background-color: #1d3e78;
   overflow-x: hidden;
   font-family: var(--font-segoe-ui);
 }
@@ -88,27 +87,6 @@ body {
     transform: scale(1) rotate(0);
     opacity: 1;
   }
-}
-
-.logo-circle {
-  background-image: url("./images/logo.png");
-  background-size: cover; /* Cambiado de 60px 60px a cover */
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.avatar {
-  background-image: url("./images/perfil.png");
-  background-size: 90px 90px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-top: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
 }
 
 .avatar:hover {
