@@ -1,0 +1,56 @@
+{
+  "tool": "image_gen (integrado)",
+  "purpose": "Recursos ilustrativos generados desde texto sin imágenes de referencia. No acreditan hechos reales ni exclusividad jurídica.",
+  "images": [
+    {
+      "name": "monitor",
+      "prompt": "Use case: product-mockup. Create a completely new photorealistic catalog image for an educational facilities inventory app: one generic unbranded desktop computer monitor on a neutral light grey studio surface, three-quarter view, slim matte graphite casing, simple stand, soft shadow, centered with generous margins, landscape image. The screen shows only an original smooth abstract teal-to-blue gradient with subtle curved shapes, no landscape photograph. No operating system interface, no Windows or other software, no icons, no text, no logos, no manufacturer marks, no watermark. Do not base this on any supplied photograph. Deliver a single polished product photo.",
+      "file": "frontend-ucvreports/CSS/auth/images/ordenador.jpg"
+    },
+    {
+      "name": "mouse",
+      "prompt": "Use case: product-mockup. Asset type: educational inventory catalog photo. Generate a new studio product photograph of one generic unbranded matte graphite wired computer mouse with a simple curved shape, three-quarter view, no decorative gaming styling. Centered single object fully visible with generous margins on a neutral light grey studio background, soft realistic shadow, clean professional lighting, landscape format. No logos, no branding, no text, no watermarks, no real manufacturer-specific distinctive styling. Invent the product independently; no reference images. One image only.",
+      "file": "frontend-ucvreports/CSS/auth/images/mouse.jpg"
+    },
+    {
+      "name": "desk",
+      "prompt": "Use case: product-mockup. Asset type: educational inventory catalog photo. Generate a new studio product photograph of one generic unbranded light oak study desk with graphite metal legs and a small drawer, three-quarter view. Centered single object fully visible with generous margins on a neutral light grey studio background, soft realistic shadow, clean professional lighting, landscape format. No logos, no branding, no text, no watermarks, no real manufacturer-specific distinctive styling. Invent the product independently; no reference images. One image only.",
+      "file": "frontend-ucvreports/CSS/auth/images/escritorios.jpg"
+    },
+    {
+      "name": "projector",
+      "prompt": "Use case: product-mockup. Asset type: educational inventory catalog photo. Generate a new studio product photograph of one generic unbranded matte white classroom projector with one glass lens and small cooling vents, three-quarter view. Centered single object fully visible with generous margins on a neutral light grey studio background, soft realistic shadow, clean professional lighting, landscape format. No logos, no branding, no text, no watermarks, no real manufacturer-specific distinctive styling. Invent the product independently; no reference images. One image only.",
+      "file": "frontend-ucvreports/CSS/auth/images/proyector.jpg"
+    },
+    {
+      "name": "fan",
+      "prompt": "Use case: product-mockup. Asset type: educational inventory catalog photo. Generate a new studio product photograph of one generic unbranded white standing pedestal fan with a circular protective wire grille, full object visible. Centered single object fully visible with generous margins on a neutral light grey studio background, soft realistic shadow, clean professional lighting, landscape format. No logos, no branding, no text, no watermarks, no real manufacturer-specific distinctive styling. Invent the product independently; no reference images. One image only.",
+      "file": "frontend-ucvreports/CSS/auth/images/ventilador.jpg"
+    },
+    {
+      "name": "whiteboard",
+      "prompt": "Use case: product-mockup. Create one original photorealistic studio catalog image of a generic unbranded rectangular classroom whiteboard, blank white writing surface, narrow silver frame and pen tray, shown three-quarter view on a light grey background with soft shadow. Fully visible centered object, generous margins, landscape. No text, writing, logos, watermark or manufacturer-specific styling.",
+      "file": "frontend-ucvreports/CSS/auth/images/pizarra.jpg"
+    },
+    {
+      "name": "campus",
+      "prompt": "Use case: photorealistic-natural. Create an original wide architectural visualization for the background of an educational facilities reporting app. A fictional modest contemporary university courtyard in a warm coastal Latin American climate, light concrete buildings with blue-grey window shading, planted trees and paths, peaceful bright morning light. Invent the architecture; do not reproduce a real campus, famous building or statue. No people, signs, text, logos, insignia, flags, branding or watermark. Landscape 16:9 composition with uncluttered areas usable behind a login form.",
+      "file": "frontend-ucvreports/CSS/auth/images/campus-ai.jpg"
+    },
+    {
+      "name": "issue_monitor",
+      "prompt": "Use case: illustration-story. One original clean editorial illustration for a facilities reporting app, clearly an illustration rather than a real evidence photo: a generic desktop monitor with dark blank screen and a loose cable resting beside it on a desk. Quiet teal, navy and light grey palette, soft 3D clay rendering on a light neutral background. One scene, centered, landscape. No text, logos, brands, operating system UI, recognizable copyrighted characters or watermark.",
+      "file": "frontend-ucvreports/CSS/auth/images/Problema monitor.jpg"
+    },
+    {
+      "name": "issue_chair",
+      "prompt": "Use case: illustration-story. One original clean editorial illustration for a facilities reporting app, clearly an illustration rather than a real evidence photo: a generic blue classroom chair with a loose seat and a detached screw lying next to it on a light neutral floor. Quiet teal, navy and light grey palette, soft 3D clay rendering. One scene, centered, landscape. No text, logos, brands, recognizable copyrighted characters or watermark.",
+      "file": "frontend-ucvreports/CSS/auth/images/Problema silla.jpg"
+    },
+    {
+      "name": "avatar",
+      "prompt": "Use case: stylized-concept. Generate one original anonymous neutral profile avatar for an educational web application: a simple abstract person bust with a smooth featureless round head and rounded shoulders, sculptural soft 3D clay appearance, navy clothing and warm neutral head against pale blue circular backdrop. Square composition, entirely contained silhouette, centered. Not a portrait of any real person. No facial features, text, logos, brand elements or watermark.",
+      "file": "frontend-ucvreports/CSS/auth/images/perfil.png"
+    }
+  ]
+}

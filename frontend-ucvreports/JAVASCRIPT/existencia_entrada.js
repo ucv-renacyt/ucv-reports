@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         productoCard.innerHTML = `
           <img src="${
             producto.urlImagen ||
-            "https://cairosales.com/37240-thickbox_default/lenovo-all-in-one-pc-215-inch-fhd-intel-core-i5-8400-4gb-520-22icb.jpg"
+            "../../CSS/auth/images/ordenador.jpg"
           }" alt="${producto.nombre}">
           <div class="producto-card-info">
               <h3>Tipo: ${producto.nombre}</h3>

@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Usar r_descripcion y lugar_problema del reporte
         productoCard.innerHTML = `
-            <img src="https://cdn-icons-png.flaticon.com/512/7415/7415672.png" alt="Imagen de Reporte">
+            <img src="../../CSS/auth/images/sin-evidencia.svg" alt="Imagen ilustrativa: sin evidencia adjunta">
             <div class="producto-card-info">
                 <h3>Descripción: ${reporte.r_descripcion}</h3>
                 <p>Lugar del Problema: ${reporte.lugar_problema}</p>

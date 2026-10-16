@@ -27,7 +27,7 @@ body {
 .logo img {
   width: auto;
   height: 70px;
-  background: url("logo.png") no-repeat center center;
+  background: url("../auth/images/logo-reportes.svg") no-repeat center center;
   background-size: 60px 60px;
 }
 

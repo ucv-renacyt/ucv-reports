@@ -445,3 +445,5 @@ body {
   border-color: #007bff;
   box-shadow: 0 0 0 2px #007bff33;
 }
+
+.brand-logo { display: block; margin: 0 auto 12px; }

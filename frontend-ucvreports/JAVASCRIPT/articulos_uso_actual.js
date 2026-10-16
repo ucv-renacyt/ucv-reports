@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Datos de los articulos dañados
   const articulos = [
     {
-      imagen: "../../CSS/auth/images/mouse.jpg", // Imagen del monitor dañado
-      tipo: "Mouse Logitech",
+      imagen: "../../CSS/auth/images/mouse.jpg", // Imagen de catálogo generada con IA
+      tipo: "Mouse genérico",
       cantidad: 4,
     },
   ];

@@ -23,8 +23,8 @@ function renderReportes(reportes) {
       <img src="${
         reporte.googleDriveFileId && reporte.googleDriveFileId.length > 0
           ? `https://lh3.googleusercontent.com/d/${reporte.googleDriveFileId}`
-          : "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=200&fit=crop"
-      }" alt="Evidencia" class="card-image">
+          : "../../CSS/auth/images/sin-evidencia.svg"
+      }" alt="${reporte.googleDriveFileId && reporte.googleDriveFileId.length > 0 ? 'Evidencia adjunta al reporte' : 'Sin evidencia fotográfica adjunta'}" class="card-image">
       <div class="card-content">
           <div class="card-date">
               Fecha: ${reporte.fecha}
